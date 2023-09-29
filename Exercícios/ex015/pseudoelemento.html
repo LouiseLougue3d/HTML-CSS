@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        a{ 
+            color: purple;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: palevioletred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: violet;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        a::before {
+            content: '⇒';
+        }
+
+        a::after {
+            content: '⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/LouiseLougue3d?tab=repositories" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCO5p6oJO0bLrR58S9cWcxHg" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=IX1dkYoLHVs&pp=ygUIYW15Z2RhbGE%3D&bpctr=1693849068&pbjreload=101" target="_blank">Música Perfeita</a></li>
+    </ul>
+</body>
+</html>

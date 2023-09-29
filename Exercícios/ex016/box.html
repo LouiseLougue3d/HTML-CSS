@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box-level*/
+            background-color: rgb(134, 77, 89);
+            height: 38px;
+            width: 390px;
+
+            border-width: 5px;
+            border-style: solid;
+            border-color:rgb(65, 25, 33);
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /*para centralizar a caixa no meio coloque margin: auto;*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: indianred;
+        }
+
+        a { /*inline-level*/
+            background-color: darkgray;
+            border-width: 2px;
+            border-style: dotted;
+            border-color: rgb(78, 77, 77);
+        }
+
+        a:visited {
+            color: rgb(156, 76, 103);
+        }
+
+        /*só deixando claro que os links (e outros) não precisam ser necessariamente inline e o mesmo acontece com o h1 (e outros), é só você mudar o display, com display: inline ou display: block, também tem o inline-block, que continua sendo inline, mas tem algumas características do block, como altura, tamanho etc.*/
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links</a> são exemplos de caixa inline-level. </p>
+</body>
+</html>
