@@ -8,10 +8,12 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        
         table {
             width: 350px;
             border-collapse: collapse;
-        }
+            position: relative;
+                }
 
         caption {
             font-size: 1.5em;
@@ -30,6 +32,12 @@
             color: white;
         }
         
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         tbody tr:nth-child(even) {
             background-color: lightgray;
         }
